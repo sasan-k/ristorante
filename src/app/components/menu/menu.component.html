@@ -1,0 +1,14 @@
+<section class="menu-container">
+    <h3 align=center>Our Menu</h3>
+    <div class="row">
+        <div *ngFor="let i of menuItems" class="col-sm-4">
+            <div class="card ">
+                <div class="card-body">
+                    <h5 class="card-title">{{i.name}}</h5>
+                    <p class="card-text">{{i.description}}</p>
+                    <a href="#" class="btn btn-danger">Order {{i.price}}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
